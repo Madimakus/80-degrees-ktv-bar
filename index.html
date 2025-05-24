@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="80 Degrees KTV Bar in Cagayan de Oro offers stylish karaoke rooms, great food, and unforgettable nights with friends. Book now!" />
   <title>80 Degrees KTV Bar</title>
   <style>
     body {
@@ -12,107 +11,104 @@
       background: #0a0a0a;
       color: #fff;
     }
-    header {
-      background: #1a1a1a;
-      padding: 1rem;
-      text-align: center;
-      border-bottom: 3px solid #ff00cc;
-    }
-    header h1 {
-      margin: 0;
-      color: #ff00cc;
-      font-size: 2rem;
-    }
+
     nav {
       display: flex;
       justify-content: center;
-      background: #111;
+      background: #fff;
+      padding: 1rem 0;
+      border-bottom: 2px solid #000;
     }
+
     nav a {
-      color: #ff00cc;
-      padding: 1rem;
+      margin: 0 1rem;
       text-decoration: none;
+      font-weight: bold;
+      color: #000;
+      font-size: 1.1rem;
     }
+
     nav a:hover {
-      background: #ff00cc;
-      color: #111;
+      color: #ff00cc;
     }
+
     main {
       padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
     }
-    section {
-      margin-bottom: 2rem;
+
+    .home-section {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
     }
-    .map {
+
+    .home-block {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .home-block img {
       width: 100%;
-      height: 300px;
-      border: none;
+      max-width: 400px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     }
-    footer {
-      background: #1a1a1a;
-      text-align: center;
-      padding: 1rem;
-      border-top: 3px solid #ff00cc;
+
+    .home-block .description {
+      flex: 1;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .home-block {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>80 Degrees KTV Bar</h1>
-    <p>2nd Floor, SM Northwing Uptown, Las Ramblas St., Pueblo Business Park, CDO</p>
-    <p>Contact: 0926 251 1604</p>
-  </header>
 
-  <nav aria-label="Main Navigation">
+  <nav>
     <a href="#home">Home</a>
-    <a href="#about">About Us</a>
-    <a href="#rooms">Rooms & Rates</a>
+    <a href="#prices">Prices</a>
     <a href="#gallery">Gallery</a>
     <a href="#menu">Menu</a>
-    <a href="#contact">Contact</a>
   </nav>
 
-  <main>
-    <section id="home">
-      <h2>Welcome to 80 Degrees KTV Bar</h2>
-      <p>Experience the ultimate karaoke night with friends in our stylish and cozy rooms, complete with amazing food and drinks.</p>
-    </section>
+  <main id="home">
+    <div class="home-section">
 
-    <section id="about">
-      <h2>About Us</h2>
-      <p>Located in the heart of Cagayan de Oro, 80 Degrees KTV Bar is your go-to spot for fun, music, and memories. Our vibrant atmosphere and top-notch service make every visit unforgettable.</p>
-    </section>
+      <div class="home-block">
+        <img src="https://source.unsplash.com/400x300/?karaoke,bar" alt="KTV Room 1" />
+        <div class="description">
+          <h2>Stylish Private Rooms</h2>
+          <p>Enjoy an intimate karaoke session in our stylishly designed rooms, perfect for groups who want comfort and privacy.</p>
+        </div>
+      </div>
 
-    <section id="rooms">
-      <h2>Rooms & Rates</h2>
-      <p>Choose from a variety of themed karaoke rooms perfect for small gatherings or big celebrations. Rates start at ₱300/hour.</p>
-    </section>
+      <div class="home-block">
+        <img src="https://source.unsplash.com/400x300/?karaoke,party" alt="KTV Room 2" />
+        <div class="description">
+          <h2>Unforgettable Nights</h2>
+          <p>Sing your heart out, laugh with friends, and create memories that last. Our atmosphere is designed for good vibes all night long.</p>
+        </div>
+      </div>
 
-    <section id="gallery">
-      <h2>Gallery</h2>
-      <p>Check out photos of our stylish rooms, bar, and happy guests!</p>
-    </section>
+      <div class="home-block">
+        <img src="https://source.unsplash.com/400x300/?bar,drinks" alt="KTV Room 3" />
+        <div class="description">
+          <h2>Great Food & Drinks</h2>
+          <p>From classic pulutan to signature cocktails, we’ve got the flavors to keep your energy high while you sing your favorite hits.</p>
+        </div>
+      </div>
 
-    <section id="menu">
-      <h2>Menu</h2>
-      <p>Delicious food and drinks to keep the good times rolling. From pulutan to cocktails—we've got it all!</p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p>Have questions or want to book a room? Reach out via phone or drop by our location.</p>
-      <iframe
-        class="map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15714.5374941246!2d124.6439082!3d8.4845091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32ff8db87c5156e9%3A0xf5973cf10a66a4a!2sSM%20City%20Cagayan%20De%20Oro%20Uptown!5e0!3m2!1sen!2sph!4v1716113867036!5m2!1sen!2sph"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </section>
+    </div>
   </main>
 
-  <footer>
-    <p>&copy; 2025 80 Degrees KTV Bar. All rights reserved.</p>
-  </footer>
 </body>
 </html>
